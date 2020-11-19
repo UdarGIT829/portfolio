@@ -30,7 +30,10 @@ nav{
   transition: border-bottom 0.5s;
   display: inline-block;
 }
-.nav-links a:not(.active):after{
+.nav-links .active a{
+  border-bottom: 2px solid rgb(233, 233, 233);
+}
+.nav-links .inactive a:after{
   content: '';
   position: absolute;
   width: 100%;
@@ -43,13 +46,11 @@ nav{
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.nav-links a:hover:after {
+.nav-links .inactive a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.nav-links .active a{
-  border-bottom: 2px solid rgb(233, 233, 233);
-}
+
 
 
 .burger {
