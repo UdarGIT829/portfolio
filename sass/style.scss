@@ -30,7 +30,7 @@ nav{
   transition: border-bottom 0.5s;
   display: inline-block;
 }
-.nav-links a:after{
+.nav-links a:not(.active):after{
   content: '';
   position: absolute;
   width: 100%;
