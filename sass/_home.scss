@@ -1,0 +1,76 @@
+
+/* Home page styling */
+
+main {
+    display: grid;
+    grid-template-columns: 10% 30% 20% 1fr;
+  }
+  .home-img{
+    grid-column-start: 4;
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-image: url("http://freepngimages.com/wp-content/uploads/2015/12/Otter-transparent-image.png");
+    background-size: cover;
+  }
+  .home-img:after{
+          content: '';
+          background-image: inherit;
+          background-size: inherit;
+          background-repeat: inherit;
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute bottom -25px;
+          z-index: -1;
+          filter: blur(20px);
+  }
+  .home-text{
+    grid-column-start: 2;
+    display: grid;
+    grid-template-rows: 60% 1fr;
+  }
+  .text{
+    grid-row-start: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .text h1{
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text .links-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text .links a{
+    border: 2px solid rgb(233, 233, 233);
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    font-weight: lighter;
+    position: relative;
+    transition: background 0.2s;
+  }
+  .text .links a:hover{
+    background: #5d4954;
+  }
+  .text .github a{
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  
+  body {
+      background-color:  #333;
+      color: rgb(233, 233, 233);
+    }
+  
+  

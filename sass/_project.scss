@@ -1,0 +1,26 @@
+/*  */
+.projects-lineup {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project{
+  border: 2px solid rgb(233, 233, 233);
+  border-radius: 5px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 5% 20% 55% 1fr;
+}
+.info{
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: 35% 1fr;
+  justify-content: space-between;
+}
+.project-name{
+
+}
+.info ul{
+  list-style-type: none;
+}
