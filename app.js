@@ -1,10 +1,11 @@
+"use strict";
 //Animation for navigation bar on mobile
 var navSlide = function () {
     var burger = document.querySelector('.burger');
     var nav = document.querySelector('.nav-links');
     var navlinks = document.querySelectorAll('.nav-links li');
     //Toggle nav
-    burger === null || burger === void 0 ? void 0 : burger.addEventListener('click', function () {
+    burger.addEventListener('click', function () {
         nav.classList.toggle('nav-active');
         //Animate Links
         navlinks.forEach(function (link, index) {
