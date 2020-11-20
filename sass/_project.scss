@@ -1,26 +1,49 @@
 /*  */
-.projects-lineup {
+.projects-Lineup {
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    //align-items: center;
+    justify-content: space-between;
 }
 .project{
   border: 2px solid rgb(233, 233, 233);
   border-radius: 5px;
   padding-bottom: 20px;
   display: grid;
-  grid-template-columns: 5% 20% 55% 1fr;
+  grid-template-columns: 1% 15% 5% 55% 5% 1fr;
+  //Columns are respectively for spacing, info, spacing, description, spacing, image
 }
 .info{
   grid-column-start: 2;
-  display: grid;
-  grid-template-rows: 35% 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .project-name{
-
+text-transform: uppercase;
+text-align: center;
+}
+.info hr{
+  border-top: 1px rgb(233, 233, 233);
+}
+.language-header{
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+}
+.languages{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: oblique;
 }
 .info ul{
   list-style-type: none;
+}
+.project-description{
+  grid-column-start: 4;
+
+}
+.project-img{
+grid-column-start: 6;
 }
