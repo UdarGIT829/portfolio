@@ -10,7 +10,7 @@
   border-radius: 5px;
   padding-bottom: 20px;
   display: grid;
-  grid-template-columns: 1% 15% 5% 55% 5% 1fr;
+  grid-template-columns: 1% 15% 5% 55% 22% 1fr;
   //Columns are respectively for spacing, info, spacing, description, spacing, image
 }
 .info{
@@ -36,6 +36,7 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   font-style: oblique;
+  padding-top: 5px;
 }
 .info ul{
   list-style-type: none;
@@ -44,6 +45,38 @@ text-align: center;
   grid-column-start: 4;
 
 }
-.project-img{
-grid-column-start: 6;
+.image-container{
+display: flex;
+flex-direction: row;
+grid-column-start: 5;
+position: relative;
+//width: 50%;
 }
+.project-img{
+width: 100%;
+height: auto;
+object-fit: scale-down;
+}
+.image-container .btn{
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 1px 1px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.image-container .btnB{
+  top: 50%;
+  left: 0%;
+}
+.image-container .btnF{
+  top: 50%;
+  left: 100%;
+}
+
