@@ -85,10 +85,10 @@ img.onclick = function(){
 }
 // When the user clicks on <span> (x), close the modal
 modal.onclick = function() {
-    img1.className += " out";
+    img2.className += " out";
     setTimeout(function() {
        modal.style.display = "none";
-       img1.className = "modal-content";
+       img2.className = "modal-content";
      }, 400);
     
  }
@@ -103,10 +103,10 @@ modal.onclick = function() {
  }
  // When the user clicks on <span> (x), close the modal
  modal.onclick = function() {
-     img1.className += " out";
+     img3.className += " out";
      setTimeout(function() {
         modal.style.display = "none";
-        img1.className = "modal-content";
+        img3.className = "modal-content";
       }, 400);
      
   } 
