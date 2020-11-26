@@ -28,22 +28,89 @@ function initializeProjects() {
             case (0):
                 {
                     img.src = "https://cdm.link/app/uploads/2010/12/mpkmini_angle_lg.png";
+                    break;
                 }
                 ;
             case (1):
                 {
-                    img.src = "https://cdm.link/app/uploads/2010/12/mpkmini_angle_lg.png";
+                    img.src = "imgs/proj2.png";
+                    break;
                 }
                 ;
             case (2):
                 {
-                    img.src = "https://cdm.link/app/uploads/2010/12/mpkmini_angle_lg.png";
+                    img.src = "https://i.imgflip.com/4nmg5z.jpg";
+                    break;
                 }
                 ;
+            default: {
+                break;
+            }
         }
+        console.log(counter);
         counter++;
     });
-    alert(imgs.length);
 }
+
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('project1-img');
+var modalImg = document.getElementById("img1");
+var captionText = document.getElementById("caption");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() {
+    img1.className += " out";
+    setTimeout(function() {
+       modal.style.display = "none";
+       img1.className = "modal-content";
+     }, 400);
+    
+ }
+//Same for other images
+var img = document.getElementById('project2-img');
+var modalImg = document.getElementById("img2");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() {
+    img1.className += " out";
+    setTimeout(function() {
+       modal.style.display = "none";
+       img1.className = "modal-content";
+     }, 400);
+    
+ }
+
+ var img = document.getElementById('project3-img');
+ var modalImg = document.getElementById("img3");
+ img.onclick = function(){
+     modal.style.display = "block";
+     modalImg.src = this.src;
+     modalImg.alt = this.alt;
+     captionText.innerHTML = this.alt;
+ }
+ // When the user clicks on <span> (x), close the modal
+ modal.onclick = function() {
+     img1.className += " out";
+     setTimeout(function() {
+        modal.style.display = "none";
+        img1.className = "modal-content";
+      }, 400);
+     
+  } 
+
+
 initializeProjects();
 navSlide();

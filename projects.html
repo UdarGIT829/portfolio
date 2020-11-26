@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <nav>
         <ul class="nav-links">
             <li class="inactive"><a href="index.html">Home</a></li>
-            <li class="active"><a href="projects.php">Projects</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
             <!--<li class="inactive"><a href="sandbox.html">Sandbox</a></li>-->
             <li class="inactive"><a href="contact.html">Contact</a></li>
         </ul>
@@ -23,10 +24,18 @@
         </div>
     </nav>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img1">
+        <img class="modal-content" id="img2">
+        <img class="modal-content" id="img3">
+        <div id="caption"></div>
+    </div>
+
     <!--Page Content-->
     <div class="projects-Lineup"></div>
         <h1>Projects</h1>
-        <div class="project">
+        <div class="project project-1">
             <div class="info">
                 <h2 class="project-name">Midi Computer Controller</h2>
                 <hr>
@@ -36,21 +45,20 @@
                     <li>Python</li>
                 </ul>
             </div>
-            <p class="project-description">MIDI devices are hardware devices that output data streams that can be interpreted by softwares as musical instruments. 
-                I developed this program to make use of a MIDI device I owned in order to control some Linux system functionalities that I found cumbersome. <br>
+            <p class="project-description">
+                MIDI devices are hardware devices that output data streams that can be interpreted by softwares as musical instruments. 
+                I developed this program to make use of a MIDI device I owned in order to control some Linux system functionalities that I found cumbersome. <br><br>
                 In order to maximize performance I coded this primarily in Bash, and I took the opportunity to code the remainder using Python which was a new language to me at the time. 
                 As asynchronous paradigms in Bash make use of multiple threads I decided to instead use multiple files instead to improve readability to future prospective users. <br>
                 The end result was a program that could run in the background and interpret dial turns and key presses as Bash commands.
             </p>
             <div class="image-container">
-                <button onclick="myFirst()" class="btnB btn">&#060</button>
-                <img class="project-img" src="">
-                <button onclick="myFirst()" class="btnF btn">&#062</button>
+                <img class="project-img" src="" id="project1-img">
             </div>
 
         </div>
         &emsp;
-        <div class="project">
+        <div class="project project-2">
             <div class="info">
                 <h2 class="project-name">Cell-Line Data Merger</h2>
                 <hr>
@@ -59,15 +67,17 @@
                     <li>Python</li>
                 </ul>
             </div>
-            <p class="project-description"><?php echo("umm yeah") ?></p>
+            <p class="project-description">
+                This program was originally developed for a Translational Oncology Laboratory to automate the collation of excel documents.<br><br>
+                Every workday each research associate records information about cell-line experiments, each experiment has a control plate and multiple experimental plates with are exposed to drugs. Data about this experiment is recorded once when the experiment is started and again after 7 days.
+                This data is recorded as a new sheet on an excel document for that individual's work during that week. The data needed to be standardized based on a template made by the manager
+            </p>
             <div class="image-container">
-                <button class="btnB btn">&#060</button>
-                <img class="project-img" src="#">
-                <button class="btnF btn">&#062</button>
+                <img class="project-img project2-img" src="" id="project2-img">
             </div>
         </div>
         &emsp;
-        <div class="project">
+        <div class="project project-3">
             <div class="info">
                 <h2 class="project-name">SingleLineProj</h2>
                 <hr>
@@ -78,13 +88,12 @@
             </div>
             <p class="project-description">Wow this was a long project blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah bklah</p>
             <div class="image-container">
-                <button class="btnB btn">&#060</button>
-                <img class="project-img" src="#">
-                <button class="btnF btn">&#062</button>
+                <img class="project-img project3-img" src="#" id="project3-img">
             </div>
         </div>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script src="app.js"></script>
 </body>
