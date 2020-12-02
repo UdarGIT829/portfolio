@@ -39,6 +39,24 @@ function initializeProjects() {
                 ;
             case (2):
                 {
+                    img.src = "imgs/proj3.png";
+                    break;
+                }
+                ;
+            case (3):
+                {
+                    img.src = "imgs/proj4.png";
+                    break;
+                }
+                ;
+            case (4):
+                {
+                    img.src = "https://i.imgflip.com/4nmg5z.jpg";
+                    break;
+                }
+                ;
+            case (5):
+                {
                     img.src = "https://i.imgflip.com/4nmg5z.jpg";
                     break;
                 }
@@ -110,6 +128,9 @@ modal.onclick = function() {
       }, 400);
      
   } 
+
+
+  
 
 
 initializeProjects();
