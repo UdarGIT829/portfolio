@@ -13,6 +13,7 @@
     height: 500px;
     background-image: url("http://freepngimages.com/wp-content/uploads/2015/12/Otter-transparent-image.png");
     background-size: cover;
+    visibility: visible;
   }
   .home-img:after{
           content: '';
@@ -25,7 +26,19 @@
           position: absolute bottom -25px;
           z-index: -1;
           filter: blur(20px);
+          visibility: visible;
   }
+
+  @media screen and (max-width:768px){
+  .home-img{
+    visibility: hidden;
+
+  }
+  .home-img:after{
+    visibility: hidden;
+  }
+  }
+
   .home-text{
     grid-column-start: 2;
     display: grid;
