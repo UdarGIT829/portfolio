@@ -31,11 +31,11 @@
 
   @media (max-width:768px){
     .home-img{
-      visibility: hidden;
+      display: none;
 
     }
     .home-img:after{
-      visibility: hidden;
+      display: none;
     }
   }
 
