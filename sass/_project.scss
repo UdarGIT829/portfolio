@@ -76,6 +76,16 @@
 text-transform: uppercase;
 text-align: center;
 }
+.project-name a{
+  text-decoration: none;
+  transition: border-bottom 0.5s;
+  color: rgb(233, 233, 233);
+  transition: color 300ms ease-in;  
+}
+.project-name a:hover{
+  color: rgb(6,69,173);
+}
+
 .info hr{
   border-top: 1px rgb(233, 233, 233);
 }
