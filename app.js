@@ -58,8 +58,7 @@ function initializeProjects() {
     });
 }
 
-
-var imageZoom = function () {
+var imageZoom = function(){
 // Get the modal
 var modal = document.getElementById('myModal');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -72,7 +71,7 @@ img.onclick = function(){
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
-};
+}
 // When the user clicks on <span> (x), close the modal
 modal.onclick = function() {
     img1.className += " out";
@@ -81,7 +80,7 @@ modal.onclick = function() {
        img1.className = "modal-content";
      }, 400);
     
- };
+ }
 //Same for other images
 var img = document.getElementById('project2-img');
 var modalImg = document.getElementById("img2");
@@ -90,7 +89,7 @@ img.onclick = function(){
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
-};
+}
 // When the user clicks on <span> (x), close the modal
 modal.onclick = function() {
     img2.className += " out";
@@ -99,7 +98,7 @@ modal.onclick = function() {
        img2.className = "modal-content";
      }, 400);
     
- };
+ }
 
  var img = document.getElementById('project3-img');
  var modalImg = document.getElementById("img3");
@@ -108,7 +107,7 @@ modal.onclick = function() {
      modalImg.src = this.src;
      modalImg.alt = this.alt;
      captionText.innerHTML = this.alt;
- };
+ }
  // When the user clicks on <span> (x), close the modal
  modal.onclick = function() {
      img3.className += " out";
@@ -117,25 +116,7 @@ modal.onclick = function() {
         img3.className = "modal-content";
       }, 400);
      
-  };
-  
- var img = document.getElementById('project4-img');
- var modalImg = document.getElementById("img4");
- img.onclick = function(){
-     modal.style.display = "block";
-     modalImg.src = this.src;
-     modalImg.alt = this.alt;
-     captionText.innerHTML = this.alt;
- };
- // When the user clicks on <span> (x), close the modal
- modal.onclick = function() {
-     img4.className += " out";
-     setTimeout(function() {
-        modal.style.display = "none";
-        img4.className = "modal-content";
-      }, 400);
-     
-  }; 
+  } 
 };
 
 
@@ -148,5 +129,3 @@ try{
 }
 catch(err){
 }
-
-
