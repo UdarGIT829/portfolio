@@ -11,11 +11,12 @@
     position: relative;
     width: 550px;
     height: 700px;
-    background-image: "https://raw.githubusercontent.com/UdarGIT829/portfolio/main/imgs/Me.png";
+    background-image: url("https://raw.githubusercontent.com/UdarGIT829/portfolio/main/imgs/Me.png");
     background-size: cover;
     visibility: visible;
   }
   .home-img:after{
+          display: flex;
           content: '';
           background-image: inherit;
           background-size: inherit;
@@ -26,7 +27,6 @@
           position: absolute bottom -25px;
           z-index: -1;
           filter: blur(20px);
-          visibility: visible;
   }
 
   .home-text{
@@ -76,7 +76,7 @@
       color: rgb(233, 233, 233);
     }
   
-    @media (max-width:768px){
+    @media screen and (max-width:800px){
       .home-img{
         display: none;
   
@@ -84,6 +84,7 @@
       .home-img:after{
         display: none;
       }
+
       .home-text{
         grid-column-start: 2;
         display: grid;
