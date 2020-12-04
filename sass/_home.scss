@@ -29,16 +29,6 @@
           visibility: visible;
   }
 
-  @media (max-width:768px){
-    .home-img{
-      display: none;
-
-    }
-    .home-img:after{
-      display: none;
-    }
-  }
-
   .home-text{
     grid-column-start: 2;
     display: grid;
@@ -86,4 +76,19 @@
       color: rgb(233, 233, 233);
     }
   
+    @media (max-width:768px){
+      .home-img{
+        display: none;
+  
+      }
+      .home-img:after{
+        display: none;
+      }
+      .home-text{
+        grid-column-start: 2;
+        display: grid;
+        grid-template-rows: 30% 1fr;
+      }
+    
+    }
   
