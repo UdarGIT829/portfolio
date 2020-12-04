@@ -49,18 +49,6 @@ function initializeProjects() {
                     break;
                 }
                 ;
-            case (4):
-                {
-                    img.src = "https://i.imgflip.com/4nmg5z.jpg";
-                    break;
-                }
-                ;
-            case (5):
-                {
-                    img.src = "https://i.imgflip.com/4nmg5z.jpg";
-                    break;
-                }
-                ;
             default: {
                 break;
             }
@@ -128,6 +116,25 @@ modal.onclick = function() {
       }, 400);
      
   } 
+  
+ var img = document.getElementById('project4-img');
+ var modalImg = document.getElementById("img4");
+ img.onclick = function(){
+     modal.style.display = "block";
+     modalImg.src = this.src;
+     modalImg.alt = this.alt;
+     captionText.innerHTML = this.alt;
+ }
+ // When the user clicks on <span> (x), close the modal
+ modal.onclick = function() {
+     img4.className += " out";
+     setTimeout(function() {
+        modal.style.display = "none";
+        img4.className = "modal-content";
+      }, 400);
+     
+  } 
+
 
 
   
