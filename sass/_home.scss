@@ -29,14 +29,14 @@
           visibility: visible;
   }
 
-  @media screen and (max-width:768px){
-  .home-img{
-    visibility: hidden;
+  @media (max-width:768px){
+    .home-img{
+      visibility: hidden;
 
-  }
-  .home-img:after{
-    visibility: hidden;
-  }
+    }
+    .home-img:after{
+      visibility: hidden;
+    }
   }
 
   .home-text{
