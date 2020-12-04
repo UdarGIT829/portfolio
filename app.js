@@ -139,6 +139,6 @@ modal.onclick = function() {
 
   
 
-
-initializeProjects();
 navSlide();
+initializeProjects();
+
