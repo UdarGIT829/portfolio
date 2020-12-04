@@ -140,5 +140,10 @@ modal.onclick = function() {
   
 
 navSlide();
-initializeProjects();
+try{
+    initializeProjects();
+}
+catch(err){
+}
+
 
