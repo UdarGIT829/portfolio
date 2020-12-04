@@ -58,7 +58,7 @@ function initializeProjects() {
     });
 }
 
-var imageZoom = function(){
+var imageZoom = function() {
 // Get the modal
 var modal = document.getElementById('myModal');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -123,9 +123,8 @@ modal.onclick = function() {
   
 
 navSlide();
-try{
+var projects=document.getElementById("projects");
+if(typeof(projects) != 'undefined' && projects != null){
     initializeProjects();
     imageZoom();
-}
-catch(err){
 }
